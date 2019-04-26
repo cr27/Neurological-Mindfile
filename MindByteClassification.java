@@ -1,4 +1,4 @@
-
+//Copyright 2019, Jordan Browning, All rights reserved
 
 
 package mindbyteclassification;
