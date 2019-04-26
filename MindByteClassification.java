@@ -1,4 +1,6 @@
 
+
+
 package mindbyteclassification;
 import javax.swing.BorderFactory;
 import java.awt.*;
@@ -12,10 +14,10 @@ import java.awt.event.FocusListener;
 public class MindByteClassification extends JFrame implements FocusListener, ActionListener,ItemListener
         {
 Container content = this.getContentPane();
-    //text areas ALL THE TIME!
+  
     final JTextArea sequencearea = new JTextArea(10,20);
     
-    //scroll bars for text areas all the time!
+  
     
 
 
@@ -26,7 +28,7 @@ Container content = this.getContentPane();
     private JScrollPane vertical;
 
  
-    JButton GENESEQUENCE = new JButton(" ANALYZE GENE SEQUENCE ");
+    JButton GENESEQUENCE = new JButton(" Analyze Mind Bytes ");
     
     JCheckBox chkDNA = new JCheckBox(" N.I. mindbyte ");
     JCheckBox chkRNA = new JCheckBox(" N.G. mindbyte ");
@@ -47,11 +49,11 @@ Container content = this.getContentPane();
               
                this.setVisible(true);
 
-               this.setSize(300,300);
+               this.setSize(600,600);
                this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-               this.setTitle(" SwingBlast Version 1.1 ");
+               this.setTitle(" Neural Network ");
 
-               content.add(pnl, BorderLayout.NORTH);
+               content.add(pnl, BorderLayout.SOUTH);
                pnl.add(GENESEQUENCE);
                vertical = new JScrollPane(sequencearea);
                vertical.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
@@ -77,7 +79,7 @@ Container content = this.getContentPane();
     public void actionPerformed(ActionEvent e)
 {
         
-        sequencearea.setText("");
+       
 }
 
 public void itemStateChanged(ItemEvent ie)
@@ -109,40 +111,11 @@ public void focusGained(FocusEvent e)
 
 public void focusLost(FocusEvent e)
 {
- String seqText = sequencearea.getText(); 
- int idx = seqText.indexOf(">"); 
- boolean fastaFormatted = idx != -1; 
- String header = null; int seqLength = 0; 
- String sequence = " " ; 
- String fastaSeq = ""; 
-if (fastaFormatted) { int returnldx = seqText.indexOf("\n"); 
-header = seqText.substring(0, returnldx); 
-fastaSeq = seqText.substring(returnldx + 1, seqText.length()).replaceAll("\\s", "").toLowerCase(); 
-fastaSeq = seqText; 
-} else { seqText = seqText.replaceAll("\\s", ""); 
-fastaSeq = seqText.toLowerCase(); 
-header = "> Sequencel"; 
-seqLength = seqText.length(); } 
-if (!fastaFormatted) { fastaSeq = header + "|" + seqLength + " bp " + "\n" + 
-fastaSeq; 
-} sequencearea.setText(fastaSeq); 
-final Font sf = sequencearea.getFont(); 
-Font f = new Font("Monospaced", sf.getStyle(), sf.getSize()); sequencearea.setFont(f); 
+ 
 }
  
-private JCheckBox[] cbDna; 
-private JCheckBox[] cbProtein; 
-private JComboBox   comboDbs; 
-private JComboBox   comboEvalues; 
- 
-/*private JPanel createProgramPanel() 
-{
-  JPanel programPanel = new JPanel(); 
-  JLabel program = new JLabel("Program");
-  program.setPreferredSize(new Dimension(600,600));
-  cbDNA
-  return -1;
-} */
+
+
     
     public static void main(String[] args) 
     {
