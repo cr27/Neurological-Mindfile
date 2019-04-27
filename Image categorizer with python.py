@@ -1,3 +1,4 @@
+//Copyright 2019, Jordan Browning, All rights reserved
 import keras
 import os
 import numpy as np
