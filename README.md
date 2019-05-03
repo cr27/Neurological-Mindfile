@@ -1,5 +1,5 @@
 # Mindfile
-Currently a file that is composed of 3 Mindbytes, the neurogenomic mindbyte, the personality mindbyte, and the neuroimaging mindbyte. The mindfile is supposed to collect data from these 3 bytes; the mindfile is specifically data collection of an individual's neurological identity. 
+Currently a file that is composed of 3 Mindbytes, the neurogenomic mindbyte, the personality mindbyte, and the neuroimaging mindbyte. The mindfile composed of data that has been collected from the 3 bytes; the mindfile is specifically data collection of an individual's neurological identity. 
 
 
 ## References
