@@ -3,4 +3,7 @@ Currently a file that is composed of 5 Mindbytes, the neurogenomic mindbyte, the
 
 
 ## References
-https://g.co/kgs/JfZxwM
+https://openpsychometrics.org/_rawdata/
+https://www.ebi.ac.uk/gwas/
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE25nnn/GSE25219/matrix/
+https://www.proteinatlas.org/about/licence
