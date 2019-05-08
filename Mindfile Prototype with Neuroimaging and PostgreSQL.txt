@@ -14,8 +14,8 @@ public class DbConnection
 {
     
     private final static String url = "jdbc:postgresql://mydbinstance1.c2noctxzqt8q.us-west-1.rds.amazonaws.com/csvdata";
-    //private final static String user = "postgres";
-    //private final static String password = "";
+    private final static String user = ""; //insert masterusername used to create RDS database here
+    private final static String password = ""; //insert masterpassword used to create RDS database here
  
 
    static public Connection connect() {
