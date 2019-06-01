@@ -1,0 +1,398 @@
+package radiobutton;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class DbConnection 
+{
+    
+    private final static String url = "jdbc:postgresql://";//insert database endpoint url here after jdbc:postgresql://
+    private final static String user = ""; //insert masterusername used to create RDS database here
+    private final static String password = ""; //insert masterpassword used to create RDS database here
+ 
+
+   static public Connection connect() {
+        Connection conn = null;
+        try {
+            conn = DriverManager.getConnection(url, user, password);
+            System.out.println("Connected to the PostgreSQL successfully.");
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        
+        
+ 
+        return conn;
+    }
+   static List<Object[]> getNeurotranscriptomedata() throws SQLException
+   
+   {
+       Connection conn = connect();
+        Statement stmt = conn.createStatement();
+        ResultSet executeQuery = stmt.executeQuery("select * from \"shortendversionneurotranscriptomedata\"");
+        List<Object[]> neurotranscriptomeList = new ArrayList<>();
+        
+        int columnCount = executeQuery.getMetaData().getColumnCount();
+        Object[] header = new Object[columnCount];
+        for (int i = 1; i < columnCount; i++) {
+            header[i] = executeQuery.getMetaData().getColumnName(i);
+        }
+        neurotranscriptomeList.add(header);
+        
+        while(executeQuery.next()) {
+           //Bigfivepersonalitytraitscores bigfivepersonalitytraitscores = new Bigfivepersonalitytraitscores();
+           //bigfivepersonalitytraitscores.age = executeQuery.getInt("age");
+           //bigfivepersonalitytraitscores.race = executeQuery.getInt("race");
+           Object[] row = new Object[columnCount];
+           
+           for(int i = 1; i < columnCount; i++) {
+            row[i] = executeQuery.getObject(i);
+           }
+           
+           
+            neurotranscriptomeList.add(row);
+        }
+        stmt.close();
+        conn.close();
+        
+        return neurotranscriptomeList;
+   }
+   static List<Object[]> getProteomedata() throws SQLException
+   
+   {
+       Connection conn = connect();
+        Statement stmt = conn.createStatement();
+        ResultSet executeQuery = stmt.executeQuery("select * from \"NeuroProteomedata\"");
+        List<Object[]> neuroproteomeList = new ArrayList<>();
+        
+        int columnCount = executeQuery.getMetaData().getColumnCount();
+        Object[] header = new Object[columnCount];
+        for (int i = 1; i < columnCount; i++) {
+            header[i] = executeQuery.getMetaData().getColumnName(i);
+        }
+        neuroproteomeList.add(header);
+        
+        while(executeQuery.next()) {
+          
+           Object[] row = new Object[columnCount];
+           
+           for(int i = 1; i < columnCount; i++) {
+            row[i] = executeQuery.getObject(i);
+           }
+           
+           
+            neuroproteomeList.add(row);
+        }
+        stmt.close();
+        conn.close();
+        
+        return neuroproteomeList;
+   }
+   
+  
+    
+   static List<Object[]> getNeurogenomedata() throws SQLException
+   
+   {
+       Connection conn = connect();
+        Statement stmt = conn.createStatement();
+        ResultSet executeQuery = stmt.executeQuery("select * from \"neurogenomicdata\"");
+        List<Object[]> neurogenomicList = new ArrayList<>();
+        
+        int columnCount = executeQuery.getMetaData().getColumnCount();
+        Object[] header = new Object[columnCount];
+        for (int i = 1; i < columnCount; i++) {
+            header[i] = executeQuery.getMetaData().getColumnName(i);
+        }
+        neurogenomicList.add(header);
+        
+        while(executeQuery.next()) {
+           
+           Object[] row = new Object[columnCount];
+           
+           for(int i = 1; i < columnCount; i++) {
+            row[i] = executeQuery.getObject(i);
+           }
+           
+           
+            neurogenomicList.add(row);
+        }
+        stmt.close();
+        conn.close();
+        
+        return neurogenomicList;
+   }
+   
+    static List<Object[]> getBigFive() throws SQLException{
+       Connection conn = connect();
+        Statement stmt = conn.createStatement();
+        ResultSet executeQuery = stmt.executeQuery("select * from \"bigfivepersonalitytraitscores\"");
+        List<Object[]> bigfivepersonalitytraitscoresList = new ArrayList<>();
+        
+        int columnCount = executeQuery.getMetaData().getColumnCount();
+        Object[] header = new Object[columnCount];
+        for (int i = 1; i < columnCount; i++) {
+            header[i] = executeQuery.getMetaData().getColumnName(i);
+        }
+        bigfivepersonalitytraitscoresList.add(header);
+        
+        while(executeQuery.next()) {
+          
+           Object[] row = new Object[columnCount];
+           
+           for(int i = 1; i < columnCount; i++) {
+            row[i] = executeQuery.getObject(i);
+           }
+           
+           
+            bigfivepersonalitytraitscoresList.add(row);
+        }
+        stmt.close();
+        conn.close();
+        
+        return bigfivepersonalitytraitscoresList;
+   }
+   
+   public static void main(String[] args) throws SQLException{
+     
+       System.out.println(getBigFive().size());
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package radiobutton;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.awt.image.DataBufferByte;
+import java.awt.image.WritableRaster;
+import java.io.File;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.imageio.ImageIO;
+import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextArea;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.table.DefaultTableModel;
+
+public class RadioButton extends JFrame implements ActionListener{
+
+    private String[] imagespath={"C:\\Users\\abc\\Desktop\\Neuroimaging\\mreandeeg1.jpg","C:\\Users\\abc\\Desktop\\Neuroimaging\\mreandeeg5.jpg","C:\\Users\\abc\\Desktop\\Neuroimaging\\mreandeeg2.jpg","C:\\Users\\abc\\Desktop\\Neuroimaging\\mreandeeg3.jpg"};
+    
+    JFrame frame = new JFrame("");
+    final JTextArea textarea = new JTextArea();
+    final JRadioButton rb = new JRadioButton();
+    final JRadioButton rb2 = new JRadioButton();
+    final JRadioButton rb3 = new JRadioButton();
+    final JRadioButton rb4 = new JRadioButton();
+    final JRadioButton rb5 = new JRadioButton();
+    
+
+    ButtonGroup buttonGroup;
+    
+    JScrollPane sp;
+
+    JLabel label = new JLabel();
+
+    public RadioButton() {
+        buttonGroup=new ButtonGroup();
+        buttonGroup.add(rb);
+        buttonGroup.add(rb2);
+        buttonGroup.add(rb3);
+        buttonGroup.add(rb4);
+        buttonGroup.add(rb5);
+        
+        frame = new JFrame();
+        frame.setSize(450, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().setLayout(null);
+
+        textarea.setFont(new Font("Monospaced", Font.PLAIN, 14));
+        textarea.setForeground(Color.GREEN);
+
+        textarea.setAutoscrolls(true);
+
+    
+
+        //frame.getContentPane().add(sp);
+
+        rb.setText("Personality");
+        rb.setActionCommand("Personality");
+        rb.setBounds(0, 50, 200, 30);
+        
+        rb2.setText("Neurogenomics");
+        rb2.setActionCommand("Neurogenomics");
+        rb2.setBounds(0, 70, 200, 30);
+        
+        rb3.setText("Neuroimaging");
+        rb3.setActionCommand("Neuroimaging");
+        rb3.setBounds(0, 90, 200, 30);
+        
+        rb4.setText("Neurotrasncriptome");
+        rb4.setActionCommand("Neurotranscriptome");
+        rb4.setBounds(0,110, 200, 30);
+        
+        rb5.setText("Neuroproteome");
+        rb5.setActionCommand("Neuroproteome");
+        rb5.setBounds(0,130,200,30);
+        
+        
+        frame.getContentPane().add(rb); 
+        frame.getContentPane().add(rb2); 
+        frame.getContentPane().add(rb3); 
+        frame.getContentPane().add(rb4); 
+        frame.getContentPane().add(rb5); 
+
+        frame.setVisible(true);
+
+        sp = new JScrollPane();
+        sp.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+        sp.setBounds(200, 50, 1200, 500);
+        frame.getContentPane().add(sp);
+                
+
+        rb.addActionListener(this);
+        rb2.addActionListener(this);
+        rb3.addActionListener(this);   
+        rb4.addActionListener(this);
+        rb5.addActionListener(this);
+    }
+        
+public byte[] extractBytes (String ImageName) throws IOException {
+
+ File imgPath = new File(ImageName);
+ BufferedImage bufferedImage = ImageIO.read(imgPath);
+
+ 
+ WritableRaster raster = bufferedImage .getRaster();
+ DataBufferByte data   = (DataBufferByte) raster.getDataBuffer();
+
+ return ( data.getData() );
+}
+
+private void addImageView(){
+    JLabel label;
+    sp.getViewport().removeAll();
+    try {
+        for(int i=0;i<imagespath.length;i++){
+        
+            File image=new File(imagespath[i]);
+            if(!image.exists()) return;
+            
+         BufferedImage img = ImageIO.read(image);
+         ImageIcon icon = new ImageIcon(img);
+         label= new JLabel(icon);
+         sp.getViewport().add(label);
+              
+         }
+      } catch (IOException e) {
+         e.printStackTrace();
+      }
+
+
+}
+ 
+    private void onRadioClicked(List<Object[]> data){
+                    try {
+                if(data==null) return;
+                
+                    JTable table = new JTable();
+                
+                
+                        table.setMinimumSize(new Dimension(1000, 1000));
+                         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+                
+                         sp.getViewport().removeAll();
+                         sp.getViewport().add(table);
+                
+                    Object[] header = data.get(0);
+                    data.remove(0);
+                    for(int i = 1; i < data.get(0).length; i++)
+                        ((DefaultTableModel)table.getModel()).addColumn(header[i]);
+                    
+                    
+                    data.forEach(o -> { ((DefaultTableModel)table.getModel()).addRow(o); });
+                   
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+    }
+    public static void main(String[] args) {
+
+        RadioButton gui = new RadioButton();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent ae) {
+        List<Object[]> list = null;
+       String action= ae.getActionCommand();
+       try {
+       if(action.equalsIgnoreCase(rb.getActionCommand())){
+            
+                list=DbConnection.getBigFive();
+           
+                   
+       }
+       
+             else if(action.equalsIgnoreCase(rb2.getActionCommand())){
+                                  list=DbConnection.getNeurogenomedata();
+
+       }
+              
+                  else if(action.equalsIgnoreCase(rb3.getActionCommand())){
+                      addImageView();
+
+       }
+                       else   if(action.equalsIgnoreCase(rb4.getActionCommand())){
+                                              list=DbConnection.getNeurotranscriptomedata();
+
+       }
+                       else if(action.equalsIgnoreCase(rb5.getActionCommand())){
+                                                     list=DbConnection.getProteomedata();
+
+       }
+       
+       onRadioClicked(list);
+                                 
+                                  } catch (SQLException ex) {
+                Logger.getLogger(RadioButton.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        
+    }
+
+}
