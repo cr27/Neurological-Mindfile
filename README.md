@@ -81,9 +81,6 @@ The following is an exact description from the proteinatlas website, "The functi
 
 ![image](https://user-images.githubusercontent.com/15940127/57658758-de7f3900-7594-11e9-86d3-d2bd70c80de3.png)
 
-Currently only has page 1 of 30 of 1460 genes defined as elevated in the brain.
-
-A Neuroproteome mindbyte can be created by isolating protein information from the open source data found from the references below.
 
 ![image](https://user-images.githubusercontent.com/15940127/57669738-21570600-75c1-11e9-8e67-7a1c913201cd.png)
 
