@@ -20,11 +20,12 @@ https://www.proteinatlas.org/about/licence
 
 
 # MindByte
+Essentially meaningless, messy data, extrapolated from various brain data. However, over time a machine learning or graphy theory based program running behind the scenes can sorting out a user’s mind byte information.  Mindbytes merge together to form something like a mind file, an actual file containing a user’s neurological identity.
 
 
 
 
-# Neurogenome
+# NeurogenomeMindByte
 ![image](https://user-images.githubusercontent.com/15940127/57660968-c233ca00-759d-11e9-905d-b1bb111e53c4.png)
 
 R Studio is capable of taking in Raw 23&Me Genetic Testing Data and comparing it to the GWAS Database to reveal traits about an individual based on scientific research. When the Raw 23&Me data and GWAS database are being compared to one another they can actually be attached together as tables within R. The purpose of comparing and attaching the aforementioned data is so that one can see what scentific results say about each snp within an individuals Raw 23&Me Genetic data. For the purpose of this coding project however, a similar, but new table is created. The new table is composed of the SNP data associated with neurological based research.
@@ -43,7 +44,7 @@ https://dabblingwithdata.wordpress.com/2018/09/07/analysing-your-23andme-genetic
 
 
 
-# Neuroproteome
+# NeuroproteomeMindByte
 The following is an exact description from the proteinatlas website, "The function of the brain, defined as the central nervous system, is to receive, process and execute the coordinated higher functions of perception, motion and cognition that signify human life. The brain can grossly be divided into different neuroanatomical functional regions such as the frontal, parietal, temporal, occipital lobes and central gray matter structures. The brain can further be stratified into neuron rich grey matter and myelinated white matter. The cellular components of the underlying and highly complex network of transmitted signals include neurons and supportive glial cells. The transcriptome analysis shows that 74% (n=14518) of all human proteins (n=19613) are expressed in the brain and 1460 of these genes show an elevated expression in brain compared to other tissue types. An analysis of the genes with elevated expression in the brain show various patterns of expression in different neurons and glial cells, as well as in neuropil; the meshwork of axons, dendrites, synapses and extra cellular matrix that embed the central nervous system cells."
 
 ![image](https://user-images.githubusercontent.com/15940127/57658758-de7f3900-7594-11e9-86d3-d2bd70c80de3.png)
