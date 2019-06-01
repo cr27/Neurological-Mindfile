@@ -22,6 +22,8 @@ https://www.proteinatlas.org/about/licence
 # MindByte
 Essentially meaningless, messy data, extrapolated from various brain data. However, over time a machine learning or graphy theory based program running behind the scenes can sorting out a user’s mind byte information.  Mindbytes merge together to form something like a mind file, an actual file containing a user’s neurological identity.
 
+
+
 # PersonalityMindByte
 Accumulates classical psychometric data through personality assesment. The Big Five Personality Trait Assesment and Fisher Tempermant Inventory
 are used. Either or both of these assesments serve as examplarary prototypical measurement to associate psychology with neurological identity. For now, just the Big Five Personality Trait Assesment is used to create the PersonalityMindByte. Both of the programs have scores output to the console which are converted to .txt and .csv files. The PersonalityMindByte is used to create part of the mindfile. This is a prototype.
@@ -59,6 +61,10 @@ Microsoft Excel
 https://dabblingwithdata.wordpress.com/2018/07/16/analysing-your-23andme-genetic-data-in-r-part-1-importing-your-genome-into-r/
 
 https://dabblingwithdata.wordpress.com/2018/09/07/analysing-your-23andme-genetic-data-in-r-part-2-exploring-the-traits-associated-with-your-genome/
+
+
+# NeuroTranscriptomeMindByte
+
 
 
 
