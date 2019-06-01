@@ -9,10 +9,15 @@ Currently a file that is composed of 4/5 Mindbytes, the neurogenomic mindbyte, t
 
 
 ## References
-https://openpsychometrics.org/_rawdata/
+https://amp.pharm.mssm.edu/archs4/data.html
 
 https://www.ebi.ac.uk/gwas/
 
 http://human.brain-map.org/static/download
 
+https://openpsychometrics.org/_rawdata/
+
+
 https://www.proteinatlas.org/about/licence
+
+
