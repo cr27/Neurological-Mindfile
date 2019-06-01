@@ -22,6 +22,24 @@ https://www.proteinatlas.org/about/licence
 # MindByte
 Essentially meaningless, messy data, extrapolated from various brain data. However, over time a machine learning or graphy theory based program running behind the scenes can sorting out a user’s mind byte information.  Mindbytes merge together to form something like a mind file, an actual file containing a user’s neurological identity.
 
+# PersonalityMindByte
+Accumulates classical psychometric data through personality assesment. The Big Five Personality Trait Assesment and Fisher Tempermant Inventory
+are used. Either or both of these assesments serve as examplarary prototypical measurement to associate psychology with neurological identity. For now, just the Big Five Personality Trait Assesment is used to create the PersonalityMindByte. Both of the programs have scores output to the console which are converted to .txt and .csv files. The PersonalityMindByte is used to create part of the mindfile. This is a prototype.
+
+![image](https://user-images.githubusercontent.com/15940127/57659007-9a406880-7595-11e9-9c2b-10ff738b74b3.png)
+
+
+![image](https://user-images.githubusercontent.com/15940127/57669309-4480b600-75bf-11e9-8466-dbf4484f1e9c.png)
+
+
+## References
+https://openpsychometrics.org/_rawdata/ (Using data from this source for the time being, this is why I am only using the Big Five assesment).
+
+https://openpsychometrics.org/printable/big-five-personality-test.pdf
+
+https://openpsychometrics.org/tests/FTI/
+
+Brown LL, Acevedo B, Fisher HE (2013). Neural Correlates of Four Broad Temperament Dimensions: Testing Predictions for a Novel Construct of Personality. PLoS ONE 8(11): e78734.
 
 
 
