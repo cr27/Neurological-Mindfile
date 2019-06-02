@@ -3,10 +3,6 @@ Currently a file that is composed of Mindbytes, the neurogenomic mindbyte, the p
 
 ![image](https://user-images.githubusercontent.com/15940127/57657764-3451e200-7591-11e9-8c02-90eaed6e173c.png)
 
-![image](https://user-images.githubusercontent.com/15940127/58755005-e8a79f80-848f-11e9-957e-dcf7e4a0c63f.png)
-
-
-
 # MindByte
 Essentially meaningless, messy data, extrapolated from various brain data. However, over time a machine learning or graphy theory based program running behind the scenes can sort out a user’s mind byte information.  Mindbytes merge together to form something like a mind file, a file containing a user’s neurological identity.
 
