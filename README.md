@@ -52,7 +52,8 @@ Brown LL, Acevedo B, Fisher HE (2013). Neural Correlates of Four Broad Temperame
 # NeurogenomeMindByte
 R Studio is capable of taking in Raw 23&Me Genetic Testing Data and comparing it to the GWAS Database to reveal traits about an individual based on scientific research. When the Raw 23&Me data and GWAS database are being compared to one another they can actually be attached together as tables within R. The purpose of comparing and attaching the aforementioned data is so that one can see what scentific results say about each snp within an individuals Raw 23&Me Genetic data. For the purpose of this coding project however, a similar, but new table is created. The new table is composed of the SNP data associated with neurological based research. Currently being used as the neurogenomic mindbyte, but is to be replaced with cerebral cortex genes provided by https://amp.pharm.mssm.edu/archs4/data.html.
 
-![image](https://user-images.githubusercontent.com/15940127/58743882-e6d9cf80-83ee-11e9-83c4-0ea06ee3df6f.png)
+
+![image](https://user-images.githubusercontent.com/15940127/58755148-a59afb80-8492-11e9-8319-6a3d9786f8f0.png)
 
 
 ## Prerequisites
