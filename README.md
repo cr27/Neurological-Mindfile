@@ -7,15 +7,6 @@ Currently a file that is composed of 5/5 Mindbytes, the neurogenomic mindbyte, t
 
 
 
-## References
-https://amp.pharm.mssm.edu/archs4/data.html
-
-https://www.ebi.ac.uk/gwas/
-
-
-
-
-
 # MindByte
 Essentially meaningless, messy data, extrapolated from various brain data. However, over time a machine learning or graphy theory based program running behind the scenes can sort out a user’s mind byte information.  Mindbytes merge together to form something like a mind file, a file containing a user’s neurological identity.
 
