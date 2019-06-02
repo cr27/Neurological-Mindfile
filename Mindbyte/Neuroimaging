@@ -1,0 +1,6 @@
+#Rstudio code for reformatting of data
+library(readr)
+neuroimaging <- read_csv("C:/Users/abc/Desktop/neuroimaging.csv")
+View(neuroimaging)
+write.csv(neuroimaging, "/Users/abc/Desktop/neuroimagingdata.csv")
+
