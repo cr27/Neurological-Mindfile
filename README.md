@@ -56,17 +56,9 @@ R Studio is capable of taking in Raw 23&Me Genetic Testing Data and comparing it
 ![image](https://user-images.githubusercontent.com/15940127/58755148-a59afb80-8492-11e9-8319-6a3d9786f8f0.png)
 
 
-## Prerequisites
-Rstudio
-
-Microsoft Excel
-
-23&Me Raw Data
 
 ## References
-https://dabblingwithdata.wordpress.com/2018/07/16/analysing-your-23andme-genetic-data-in-r-part-1-importing-your-genome-into-r/
-
-https://dabblingwithdata.wordpress.com/2018/09/07/analysing-your-23andme-genetic-data-in-r-part-2-exploring-the-traits-associated-with-your-genome/
+https://amp.pharm.mssm.edu/archs4/data.html
 
 
 # NeuroTranscriptomeMindByte
