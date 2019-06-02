@@ -23,8 +23,9 @@ https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WDIYB5
 
 
 # PersonalityMindByte
-Accumulates classical psychometric data through personality assesment. The Big Five Personality Trait Assesment and Fisher Tempermant Inventory
-are used. Either or both of these assesments serve as examplarary prototypical measurement to associate psychology with neurological identity. For now, just the Big Five Personality Trait Assesment is used to create the PersonalityMindByte. Both of the programs have scores output to the console which are converted to .txt and .csv files. The PersonalityMindByte is used to create part of the mindfile. This is a prototype.
+Accumulates classical psychometric data through personality assesment. The Big Five Personality Trait Assesment and Fisher Tempermant Inventory are used. Either or both of these assesments serve as examplarary prototypical measurement to associate psychology with neurological identity. For now, just the Big Five Personality Trait Assesment is used to create the PersonalityMindByte. Both of the programs have scores output to the console which are converted to .txt and .csv files. The PersonalityMindByte is used to create part of the mindfile. This is a prototype.
+
+Note: Please read codebook.txt to interpret personality data.
 
 ![image](https://user-images.githubusercontent.com/15940127/57659007-9a406880-7595-11e9-9c2b-10ff738b74b3.png)
 
