@@ -1,5 +1,5 @@
 # Mindfile
-Currently a file that is composed of 5/5 Mindbytes, the neurogenomic mindbyte, the personality mindbyte, the neuroimaging mindbyte, the neurotranscriptome mindbyte, and the neuroproteome mindbyte. The mindfile is a postgresql database hosted on the cloud. The mindfile is representative of an individual's neurological identity. This is a prototype.
+Currently a file that is composed of Mindbytes, the neurogenomic mindbyte, the personality mindbyte, the neuroimaging mindbyte, the neurotranscriptome mindbyte, and the neuroproteome mindbyte. The mindfile is mainly a postgresql database hosted on the cloud. The mindfile is representative of an individual's neurological identity. This is a prototype.
 
 ![image](https://user-images.githubusercontent.com/15940127/57657764-3451e200-7591-11e9-8c02-90eaed6e173c.png)
 
@@ -13,7 +13,7 @@ Essentially meaningless, messy data, extrapolated from various brain data. Howev
 
 
 # NeuroimagingMindByte
-Accumulates Neuroimaging data using MRI images. This is a prototype.
+Neuroimaging data composed of MRI image(s) stored on desktop. This is a prototype.
 
 ![image](https://user-images.githubusercontent.com/15940127/57669547-3ed7a000-75c0-11e9-931f-811e5839c835.png)
 
