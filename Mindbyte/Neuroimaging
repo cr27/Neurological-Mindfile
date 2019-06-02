@@ -4,3 +4,6 @@ neuroimaging <- read_csv("C:/Users/abc/Desktop/neuroimaging.csv")
 View(neuroimaging)
 write.csv(neuroimaging, "/Users/abc/Desktop/neuroimagingdata.csv")
 
+#csv data
+mri1	 mri2	 mri3	 mri4	 mri5	 mri6	 cerebral_cortex__1__anatomy_1__anatomy
+mri1.jpg	mri2.jpg	mri3.jpg	mri4.jpg	mri5.jpg	mri6.jpg	 cerebral_cortex__1__anatomy_1__anatomy.jpg
