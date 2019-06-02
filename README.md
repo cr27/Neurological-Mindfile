@@ -12,12 +12,8 @@ https://amp.pharm.mssm.edu/archs4/data.html
 
 https://www.ebi.ac.uk/gwas/
 
-http://human.brain-map.org/static/download
-
-https://openpsychometrics.org/_rawdata/
 
 
-https://www.proteinatlas.org/about/licence
 
 
 # MindByte
@@ -73,6 +69,10 @@ https://dabblingwithdata.wordpress.com/2018/09/07/analysing-your-23andme-genetic
 
 
 # NeuroTranscriptomeMindByte
+![image](https://user-images.githubusercontent.com/15940127/58755057-b8accc00-8490-11e9-8f2f-5d04ea9f13f7.png)
+
+## References
+http://human.brain-map.org/static/download
 
 
 
