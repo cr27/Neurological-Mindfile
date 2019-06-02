@@ -1,3 +1,4 @@
+
 package radiobutton;
 
 import java.sql.Connection;
@@ -12,9 +13,9 @@ import java.util.List;
 public class DbConnection 
 {
     
-    private final static String url = "jdbc:postgresql://";//insert database endpoint url here after jdbc:postgresql://
-    private final static String user = ""; //insert masterusername used to create RDS database here
-    private final static String password = ""; //insert masterpassword used to create RDS database here
+    private final static String url = "jdbc:postgresql://mydbinstance1.c2noctxzqt8q.us-west-1.rds.amazonaws.com/csvdata";
+    private final static String user = "postgres";
+    private final static String password = "Vmhs152999!";
  
 
    static public Connection connect() {
@@ -35,7 +36,7 @@ public class DbConnection
    {
        Connection conn = connect();
         Statement stmt = conn.createStatement();
-        ResultSet executeQuery = stmt.executeQuery("select * from \"shortendversionneurotranscriptomedata\"");
+        ResultSet executeQuery = stmt.executeQuery("select * from \"RNAseqTPM\"");
         List<Object[]> neurotranscriptomeList = new ArrayList<>();
         
         int columnCount = executeQuery.getMetaData().getColumnCount();
@@ -102,7 +103,7 @@ public class DbConnection
    {
        Connection conn = connect();
         Statement stmt = conn.createStatement();
-        ResultSet executeQuery = stmt.executeQuery("select * from \"neurogenomicdata\"");
+        ResultSet executeQuery = stmt.executeQuery("select * from \"cerebralcortexgenome\"");
         List<Object[]> neurogenomicList = new ArrayList<>();
         
         int columnCount = executeQuery.getMetaData().getColumnCount();
@@ -164,12 +165,6 @@ public class DbConnection
        System.out.println(getBigFive().size());
    }
 }
-
-
-
-
-
-
 
 
 
