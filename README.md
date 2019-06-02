@@ -3,7 +3,8 @@ Currently a file that is composed of 5/5 Mindbytes, the neurogenomic mindbyte, t
 
 ![image](https://user-images.githubusercontent.com/15940127/57657764-3451e200-7591-11e9-8c02-90eaed6e173c.png)
 
-![image](https://user-images.githubusercontent.com/15940127/57670543-9d068200-75c4-11e9-8309-afe885060b4d.png)
+![image](https://user-images.githubusercontent.com/15940127/58755005-e8a79f80-848f-11e9-957e-dcf7e4a0c63f.png)
+
 
 
 ## References
