@@ -78,10 +78,6 @@ The following is an exact description from the proteinatlas website, "The functi
 ![image](https://user-images.githubusercontent.com/15940127/57669738-21570600-75c1-11e9-8e67-7a1c913201cd.png)
 
 
-## Prerequisites
-Winzip
-
-Microsoft Excel
 
 ## References
 https://www.proteinatlas.org/humanproteome/tissue/brain
@@ -101,6 +97,19 @@ PubMed: 24309898 DOI: 10.1074/mcp.M113.035600
 
 Sjöstedt E et al, 2015. Defining the Human Brain Proteome Using Transcriptomics and Antibody-Based Profiling with a Focus on the Cerebral Cortex. PLoS One.
 PubMed: 26076492 DOI: 10.1371/journal.pone.0130028	
+
+
+
+## Mindfile Prerequisites
+Winzip
+
+http://sqlizer.io/
+
+Microsoft Excel
+
+Netbeans IDE 8.2
+
+Pgadmin 4/Postgresql
 
 
 
