@@ -102,6 +102,16 @@ PubMed: 26076492 DOI: 10.1371/journal.pone.0130028
 
 
 
+# NeurometabolicMindbyte
+
+
+![image](https://user-images.githubusercontent.com/15940127/58769753-f24c0880-855e-11e9-8207-9d947745b47d.png)
+
+
+
+
+
+
 ## Mindfile Prerequisites
 Winzip
 
