@@ -14,10 +14,9 @@ Neuroimaging data composed of MRI image(s) stored on desktop or csv file, still 
 ![image](https://user-images.githubusercontent.com/15940127/59066919-034d9000-8865-11e9-802f-31e5e9d382b0.png)
 
 
-![image](https://user-images.githubusercontent.com/15940127/57669547-3ed7a000-75c0-11e9-931f-811e5839c835.png) OR
+![image](https://user-images.githubusercontent.com/15940127/57669547-3ed7a000-75c0-11e9-931f-811e5839c835.png) 
 
 
-![image](https://user-images.githubusercontent.com/15940127/58766096-ac2b8080-852f-11e9-9b1b-7761129491b8.png)
 
 
 ## References
