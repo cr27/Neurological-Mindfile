@@ -270,8 +270,7 @@ import javax.swing.table.DefaultTableModel;
 
 public class RadioButton extends JFrame implements ActionListener{
 
-    private String[] imagespath={"C:\\Users\\abc\\Desktop\\Neuroimaging\\mreandeeg1.jpg","C:\\Users\\abc\\Desktop\\Neuroimaging\\mreandeeg5.jpg","C:\\Users\\abc\\Desktop\\Neuroimaging\\mreandeeg2.jpg","C:\\Users\\abc\\Desktop\\Neuroimaging\\mreandeeg3.jpg"};
-    
+    private String[] imagespath={"C:\\Users\\abc\\Desktop\\Neuroimaging\\Rplot.jpg"};    
     JFrame frame = new JFrame("");
     final JTextArea textarea = new JTextArea();
     final JRadioButton rb = new JRadioButton();
