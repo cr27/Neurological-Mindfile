@@ -9,7 +9,7 @@ Essentially meaningless, messy data. However, over time a machine learning or gr
 
 
 # NeuroimagingMindByte
-Neuroimaging data composed of MRI image(s) stored on desktop or csv file, still haven't decided. This is a prototype.
+Neuroimaging data composed of MRI image(s) stored on desktop. This is a prototype.
 
 ![image](https://user-images.githubusercontent.com/15940127/59066919-034d9000-8865-11e9-802f-31e5e9d382b0.png)
 
