@@ -16,7 +16,8 @@ Neuroimaging data composed of MRI image(s) stored on desktop. This is a prototyp
 ![image](https://user-images.githubusercontent.com/15940127/61331992-fdd65480-a7d7-11e9-80ed-0dcc202fb740.png)
 
 
-![image](https://user-images.githubusercontent.com/15940127/57669547-3ed7a000-75c0-11e9-931f-811e5839c835.png) 
+![image](https://user-images.githubusercontent.com/15940127/61334253-835d0300-a7de-11e9-892c-d7f8a3a2e1d8.png)
+
 
 
 
