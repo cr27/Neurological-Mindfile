@@ -64,7 +64,7 @@ public class DbConnection
         
         return neurotranscriptomeList;
    }
-   static List<Object[]> getProteomedata() throws SQLException
+   static List<Object[]> getNeuroProteomedata() throws SQLException
    
    {
        Connection conn = connect();
@@ -130,6 +130,38 @@ public class DbConnection
         return neurogenomicList;
    }
    
+   static List<Object[]> getNeurometabolomedata() throws SQLException
+   
+   {
+       Connection conn = connect();
+        Statement stmt = conn.createStatement();
+        ResultSet executeQuery = stmt.executeQuery("select * from \"neurometabolismdata\"");
+        List<Object[]> neurometabolomeList = new ArrayList<>();
+        
+        int columnCount = executeQuery.getMetaData().getColumnCount();
+        Object[] header = new Object[columnCount];
+        for (int i = 1; i < columnCount; i++) {
+            header[i] = executeQuery.getMetaData().getColumnName(i);
+        }
+        neurometabolomeList.add(header);
+        
+        while(executeQuery.next()) {
+           
+           Object[] row = new Object[columnCount];
+           
+           for(int i = 1; i < columnCount; i++) {
+            row[i] = executeQuery.getObject(i);
+           }
+           
+           
+            neurometabolomeList.add(row);
+        }
+        stmt.close();
+        conn.close();
+        
+        return neurometabolomeList;
+   }
+   
     static List<Object[]> getBigFive() throws SQLException{
        Connection conn = connect();
         Statement stmt = conn.createStatement();
@@ -159,12 +191,43 @@ public class DbConnection
         
         return bigfivepersonalitytraitscoresList;
    }
+    
+    static List<Object[]> getNeuroimaging() throws SQLException{
+       Connection conn = connect();
+        Statement stmt = conn.createStatement();
+        ResultSet executeQuery = stmt.executeQuery("select * from \"neuroimaging\"");
+        List<Object[]> neuroimagingscoresList = new ArrayList<>();
+        
+        int columnCount = executeQuery.getMetaData().getColumnCount();
+        Object[] header = new Object[columnCount];
+        for (int i = 1; i < columnCount; i++) {
+            header[i] = executeQuery.getMetaData().getColumnName(i);
+        }
+        neuroimagingscoresList.add(header);
+        
+        while(executeQuery.next()) {
+          
+           Object[] row = new Object[columnCount];
+           
+           for(int i = 1; i < columnCount; i++) {
+            row[i] = executeQuery.getObject(i);
+           }
+           
+           
+            neuroimagingscoresList.add(row);
+        }
+        stmt.close();
+        conn.close();
+        
+        return neuroimagingscoresList;
+   }
    
    public static void main(String[] args) throws SQLException{
      
        System.out.println(getBigFive().size());
    }
 }
+
 
 
 
@@ -216,6 +279,7 @@ public class RadioButton extends JFrame implements ActionListener{
     final JRadioButton rb3 = new JRadioButton();
     final JRadioButton rb4 = new JRadioButton();
     final JRadioButton rb5 = new JRadioButton();
+    final JRadioButton rb6 = new JRadioButton();
     
 
     ButtonGroup buttonGroup;
@@ -231,6 +295,7 @@ public class RadioButton extends JFrame implements ActionListener{
         buttonGroup.add(rb3);
         buttonGroup.add(rb4);
         buttonGroup.add(rb5);
+        buttonGroup.add(rb6);
         
         frame = new JFrame();
         frame.setSize(450, 300);
@@ -258,7 +323,7 @@ public class RadioButton extends JFrame implements ActionListener{
         rb3.setActionCommand("Neuroimaging");
         rb3.setBounds(0, 90, 200, 30);
         
-        rb4.setText("Neurotrasncriptome");
+        rb4.setText("Neurotranscriptome");
         rb4.setActionCommand("Neurotranscriptome");
         rb4.setBounds(0,110, 200, 30);
         
@@ -266,12 +331,17 @@ public class RadioButton extends JFrame implements ActionListener{
         rb5.setActionCommand("Neuroproteome");
         rb5.setBounds(0,130,200,30);
         
+        rb6.setText("Neurometabolome");
+        rb6.setActionCommand("Neurometabolome");
+        rb6.setBounds(0,150,200,30);
+        
         
         frame.getContentPane().add(rb); 
         frame.getContentPane().add(rb2); 
         frame.getContentPane().add(rb3); 
         frame.getContentPane().add(rb4); 
         frame.getContentPane().add(rb5); 
+        frame.getContentPane().add(rb6); 
 
         frame.setVisible(true);
 
@@ -286,6 +356,7 @@ public class RadioButton extends JFrame implements ActionListener{
         rb3.addActionListener(this);   
         rb4.addActionListener(this);
         rb5.addActionListener(this);
+        rb6.addActionListener(this);
     }
         
 public byte[] extractBytes (String ImageName) throws IOException {
@@ -378,7 +449,11 @@ private void addImageView(){
 
        }
                        else if(action.equalsIgnoreCase(rb5.getActionCommand())){
-                                                     list=DbConnection.getProteomedata();
+                                                     list=DbConnection.getNeuroProteomedata();
+
+       }
+                       else if(action.equalsIgnoreCase(rb6.getActionCommand())){
+                                                     list=DbConnection.getNeurometabolomedata();
 
        }
        
