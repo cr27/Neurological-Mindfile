@@ -13,6 +13,8 @@ Neuroimaging data composed of MRI image(s) stored on desktop. This is a prototyp
 
 ![image](https://user-images.githubusercontent.com/15940127/59066919-034d9000-8865-11e9-802f-31e5e9d382b0.png)
 
+![image](https://user-images.githubusercontent.com/15940127/61331992-fdd65480-a7d7-11e9-80ed-0dcc202fb740.png)
+
 
 ![image](https://user-images.githubusercontent.com/15940127/57669547-3ed7a000-75c0-11e9-931f-811e5839c835.png) 
 
@@ -23,6 +25,8 @@ Neuroimaging data composed of MRI image(s) stored on desktop. This is a prototyp
 https://www.alexejgossmann.com/MRI_viz/
 
 https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WDIYB5
+
+http://human.brain-map.org/mri_viewers/data
 
 
 # PersonalityMindByte
