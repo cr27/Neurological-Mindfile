@@ -53,7 +53,7 @@ Brown LL, Acevedo B, Fisher HE (2013). Neural Correlates of Four Broad Temperame
 
 
 # NeurogenomeMindByte
- The genome mind byte below is a Cerebral Cortex Neurogenome. This genome serves as a reference genome for the neurotranscriptome and neuroproteome mind bytes.
+ The genome mind byte below is a Cerebral Cortex Neurogenome. This genome serves as a reference genome for the neurotranscriptome, neurometabolome and neuroproteome mind bytes.
  
 ![image](https://user-images.githubusercontent.com/15940127/58767159-54474680-853c-11e9-961e-fdd42f526111.png)
 
