@@ -136,7 +136,7 @@ Microsoft Excel
 
 Netbeans IDE 8.2
 
-Pgadmin 4/Postgresql
+Amazon RDS for PostgreSQL
 
 
 
