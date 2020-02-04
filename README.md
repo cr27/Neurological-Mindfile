@@ -130,6 +130,8 @@ Winzip
 
 http://sqlizer.io/
 
+RStudio
+
 Microsoft Excel
 
 Netbeans IDE 8.2
