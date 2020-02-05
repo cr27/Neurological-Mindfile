@@ -13,7 +13,7 @@ import java.util.List;
 public class DbConnection 
 {
     
-    private final static String url = /*Insert with quotes Amazon RDS endpoint url */
+    private final static String url = /*Insert with quotes, jdbc:postgresql://Amazon RDS endpoint url/name of PgAdmin4 database */
     private final static String user = /*insert with quotes master username created in AWS*/
     private final static String password = /*Insert with quotes master password created in AWS here*/
  
