@@ -58,8 +58,7 @@ Brown LL, Acevedo B, Fisher HE (2013). Neural Correlates of Four Broad Temperame
 ![image](https://user-images.githubusercontent.com/15940127/58767159-54474680-853c-11e9-961e-fdd42f526111.png)
 
 
-![image](https://user-images.githubusercontent.com/15940127/58755148-a59afb80-8492-11e9-8319-6a3d9786f8f0.png)
-
+![image](https://user-images.githubusercontent.com/15940127/73891757-ca1d5380-4829-11ea-917c-38f405f844bb.png)
 
 
 ## References
