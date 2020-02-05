@@ -407,7 +407,7 @@ private void addImageView(){
                 
                     Object[] header = data.get(0);
                     data.remove(0);
-                    for(int i = 1; i < data.get(0).length; i++)
+                    for(int i = 0; i < data.get(0).length; i++)
                         ((DefaultTableModel)table.getModel()).addColumn(header[i]);
                     
                     
