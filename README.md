@@ -70,7 +70,7 @@ https://amp.pharm.mssm.edu/archs4/data.html
 ![image](https://user-images.githubusercontent.com/15940127/58767118-cc613c80-853b-11e9-8003-d2c53b1a7eb3.png)
 
 
-![image](https://user-images.githubusercontent.com/15940127/58755057-b8accc00-8490-11e9-8f2f-5d04ea9f13f7.png)
+![image](https://user-images.githubusercontent.com/15940127/73891883-208a9200-482a-11ea-9607-37c7e1495c0c.png)
 
 ## References
 http://human.brain-map.org/static/download
@@ -84,7 +84,13 @@ The following is an exact description from the proteinatlas website, "The functi
 ![image](https://user-images.githubusercontent.com/15940127/57658758-de7f3900-7594-11e9-86d3-d2bd70c80de3.png)
 
 
-![image](https://user-images.githubusercontent.com/15940127/57669738-21570600-75c1-11e9-8e67-7a1c913201cd.png)
+
+![image](https://user-images.githubusercontent.com/15940127/73891916-3ef08d80-482a-11ea-9fad-e41601dc9113.png)
+
+
+
+
+
 
 
 
@@ -111,7 +117,8 @@ PubMed: 26076492 DOI: 10.1371/journal.pone.0130028
 
 # NeurometabolicMindbyte
 ![image](https://user-images.githubusercontent.com/15940127/58769753-f24c0880-855e-11e9-8207-9d947745b47d.png)
-![image](https://user-images.githubusercontent.com/15940127/58770586-aac87b00-8564-11e9-8ad1-a07cb2b5cecc.png)
+![image](https://user-images.githubusercontent.com/15940127/73891985-77906700-482a-11ea-966d-a4f65fbf6672.png)
+
 
 
 
