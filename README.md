@@ -38,7 +38,7 @@ Note: Please read codebook.txt to interpret personality data.
 ![image](https://user-images.githubusercontent.com/15940127/57659007-9a406880-7595-11e9-9c2b-10ff738b74b3.png)
 
 
-![image](https://user-images.githubusercontent.com/15940127/57669309-4480b600-75bf-11e9-8466-dbf4484f1e9c.png)
+![image](https://user-images.githubusercontent.com/15940127/73891527-495e5780-4829-11ea-9bba-9ac9850955a4.png)
 
 
 ## References
