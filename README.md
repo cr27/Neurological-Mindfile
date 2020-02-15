@@ -138,24 +138,27 @@ Winzip
 
 RStudio
 
+* RStudio is useful for converting non csv files into csv files
+
 Microsoft Excel
 
-* Use Excel to create .csv files for sqlizer
+* Use Excel to edit/maintain .csv files for sqlizer
 
 http://sqlizer.io/
 
-*Use sqlizer to convert .csv files into MySQL scripts for PostgreSQL
-
-
-
-
-
-
-Netbeans IDE 8.2
+* Use sqlizer to convert .csv files into MySQL scripts for PostgreSQL
 
 Amazon RDS for PostgreSQL
 
+*
+
 PgAdmin4
+
+*
+
+Netbeans IDE 8.2
+
+*
 
 
 
