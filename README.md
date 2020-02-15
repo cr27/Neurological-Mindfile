@@ -150,15 +150,15 @@ http://sqlizer.io/
 
 Amazon RDS for PostgreSQL
 
-*
+* Create a PostgreSQL database using Amazon's RDS 
 
 PgAdmin4
 
-*
+* Install PgAdmin4 to gain access to the PostgreSQL Tool that will allow you to add MySQL scripts using the query tool
 
 Netbeans IDE 8.2
 
-*
+* Install Netbeans or any Java platform to connect to the PostgreSQL database
 
 
 
