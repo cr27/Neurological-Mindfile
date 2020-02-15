@@ -130,8 +130,8 @@ https://www.vmh.life/
 
 
 
-
-## Mindfile Prerequisites
+# Installation
+## Prerequisites
 Winzip
 
 http://sqlizer.io/
