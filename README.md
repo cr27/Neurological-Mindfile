@@ -131,14 +131,25 @@ https://www.vmh.life/
 
 
 # Installation
-## Prerequisites
+### Prerequisites
 Winzip
 
-http://sqlizer.io/
+* Winzip, this nifty program helps unzip those .tsv files, .gz files, and .tar files derived from webpages being used to gather and accumulate data.
 
 RStudio
 
 Microsoft Excel
+
+* Use Excel to create .csv files for sqlizer
+
+http://sqlizer.io/
+
+*Use sqlizer to convert .csv files into MySQL scripts for PostgreSQL
+
+
+
+
+
 
 Netbeans IDE 8.2
 
