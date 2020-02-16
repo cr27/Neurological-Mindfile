@@ -140,10 +140,6 @@ RStudio
 
 * RStudio is useful for converting non csv files into csv files
 
-Microsoft Excel
-
-* Use Excel to edit/maintain .csv files for sqlizer
-
 http://sqlizer.io/
 
 * Use sqlizer to convert .csv files into MySQL scripts for PostgreSQL
@@ -169,6 +165,30 @@ Next, open up the connection tab that is attached to the window that is or still
 ![image](https://user-images.githubusercontent.com/15940127/74597523-b20db700-5015-11ea-8674-385052e3d74c.png)
 
 A new server should now be created with a postgres database attached.
+
+
+The second part to using the downloaded programs is ensuring all data is formatted to a .csv file, to do this one can use Rstudios to reformat files such as, .tsv to .csv. Example code is shown below with a picture.
+
+
+![image](https://user-images.githubusercontent.com/15940127/74597997-03ba3f80-501e-11ea-80d1-1bbfface31b3.png)
+
+
+The third part, once all the files you plan on using for your postgresql database are .csv files you can then convert these to postgresql query tool ready files using http://sqlizer.io/
+
+![image](https://user-images.githubusercontent.com/15940127/74598083-a0c9a800-501f-11ea-8063-4afc54723ec2.png)
+
+
+Fourth, once you have converted your .csv  files into .sql files you can then use the postgresql query tool in pgadmin4 to create tables within your pgadmin4 server. However, it helps to have notepad++ or an equivalent program so you can copy and paste your sql code into the query tool.
+![image](https://user-images.githubusercontent.com/15940127/74598110-50067f00-5020-11ea-8552-de0ffd41ea99.png)
+![image](https://user-images.githubusercontent.com/15940127/74598125-9bb92880-5020-11ea-92ac-9b9438485c88.png)
+
+
+
+
+
+
+
+
 
 
 
