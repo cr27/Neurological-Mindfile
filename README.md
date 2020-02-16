@@ -182,6 +182,8 @@ Fourth, once you have converted your .csv  files into .sql files you can then us
 ![image](https://user-images.githubusercontent.com/15940127/74598110-50067f00-5020-11ea-8552-de0ffd41ea99.png)
 ![image](https://user-images.githubusercontent.com/15940127/74598125-9bb92880-5020-11ea-92ac-9b9438485c88.png)
 
+Lastly, use the mindfile source code to connect to the pgadmin4 postgresql tool.
+
 
 
 
