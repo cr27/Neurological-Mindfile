@@ -66,7 +66,7 @@ https://amp.pharm.mssm.edu/archs4/data.html
 
 
 # NeuroTranscriptomeMindByte
-The NeuroTranscriptomeMindByte takes RNA-Sequencing datasets from the
+The NeuroTranscriptomeMindByte takes RNA-Sequencing datasets associated with the human genome from the Allen Brain Atlas.
 
 ![image](https://user-images.githubusercontent.com/15940127/58767118-cc613c80-853b-11e9-8003-d2c53b1a7eb3.png)
 
@@ -80,7 +80,7 @@ http://human.brain-map.org/static/download
 
 
 # NeuroproteomeMindByte
-The following is an exact description from the proteinatlas website, "The function of the brain, defined as the central nervous system, is to receive, process and execute the coordinated higher functions of perception, motion and cognition that signify human life. The brain can grossly be divided into different neuroanatomical functional regions such as the frontal, parietal, temporal, occipital lobes and central gray matter structures. The brain can further be stratified into neuron rich grey matter and myelinated white matter. The cellular components of the underlying and highly complex network of transmitted signals include neurons and supportive glial cells. The transcriptome analysis shows that 74% (n=14518) of all human proteins (n=19613) are expressed in the brain and 1460 of these genes show an elevated expression in brain compared to other tissue types. An analysis of the genes with elevated expression in the brain show various patterns of expression in different neurons and glial cells, as well as in neuropil; the meshwork of axons, dendrites, synapses and extra cellular matrix that embed the central nervous system cells."
+Takes protein data assocaited with cerebral cortex gene expression from the Human Protein Atlas.
 
 ![image](https://user-images.githubusercontent.com/15940127/57658758-de7f3900-7594-11e9-86d3-d2bd70c80de3.png)
 
@@ -89,14 +89,8 @@ The following is an exact description from the proteinatlas website, "The functi
 ![image](https://user-images.githubusercontent.com/15940127/73891916-3ef08d80-482a-11ea-9fad-e41601dc9113.png)
 
 
-
-
-
-
-
-
 ## References
-https://www.proteinatlas.org/humanproteome/tissue/brain
+https://www.proteinatlas.org/search/brain_category_rna%3Acerebral+cortex%3BRegion+enriched%2CGroup+enriched%2CRegion+enhanced+AND+sort_by%3Atissue+specific+score
 
 https://www.proteinatlas.org/search/tissue_specificity_rna:cerebral%20cortex;Tissue%20enriched+AND+sort_by:tissue+specific+score+AND+show_columns:groupenriched
 
@@ -117,6 +111,8 @@ PubMed: 26076492 DOI: 10.1371/journal.pone.0130028
 
 
 # NeurometabolicMindbyte
+Gene associated metabolome data from the Virtual Metabolic Human webpage
+
 ![image](https://user-images.githubusercontent.com/15940127/58769753-f24c0880-855e-11e9-8207-9d947745b47d.png)
 ![image](https://user-images.githubusercontent.com/15940127/73891985-77906700-482a-11ea-966d-a4f65fbf6672.png)
 
