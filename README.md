@@ -9,7 +9,7 @@ Essentially meaningless, messy data. However, over time a program running behind
 
 
 # NeuroimagingMindByte
-Neuroimaging data composed of MRI image(s) stored on desktop. This is a prototype.
+Neuroimaging MRI data taken from Harvard Dataverse and Allen Brain Atlas stored on desktop.
 
 ![image](https://user-images.githubusercontent.com/15940127/59066919-034d9000-8865-11e9-802f-31e5e9d382b0.png)
 
@@ -31,7 +31,7 @@ http://human.brain-map.org/mri_viewers/data
 
 
 # PersonalityMindByte
-Accumulates classical psychometric data through personality assesment. The Big Five Personality Trait Assesment and Fisher Tempermant Inventory are used. Either or both of these assesments serve as examplarary prototypical measurement to associate psychology with neurological identity. For now, just the Big Five Personality Trait Assesment is used to create the PersonalityMindByte. Both of the programs have scores output to the console which are converted to .txt and .csv files. The PersonalityMindByte is used to create part of the mindfile. This is a prototype.
+Accumulates classical psychometric data through personality assesment. The Big Five Personality Trait Assesment and Fisher Tempermant Inventory are used. Either or both of these assesments serve as examplarary prototypical measurement to associate psychology with neurological identity. For now, just the Big Five Personality Trait Assesment is used to create the PersonalityMindByte. Both of the programs have scores output to the console which are converted to .txt and .csv files. The PersonalityMindByte is used to create part of the mindfile. 
 
 Note: Please read codebook.txt to interpret personality data.
 
@@ -66,6 +66,7 @@ https://amp.pharm.mssm.edu/archs4/data.html
 
 
 # NeuroTranscriptomeMindByte
+The NeuroTranscriptomeMindByte takes RNA-Sequencing datasets from the
 
 ![image](https://user-images.githubusercontent.com/15940127/58767118-cc613c80-853b-11e9-8003-d2c53b1a7eb3.png)
 
