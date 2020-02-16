@@ -164,7 +164,8 @@ Netbeans IDE 8.2
 Open up Pgadmin4, prepare yourself by getting your postgresql database server name, database master password, and master username. Once these items have been readied right click on where it says servers, from here right click on servers, highlight create and select the  server option. Once you've done this a menu window will appear. You now need to name your server aws-rds or whatever you would like your server name to be. 
 ![image](https://user-images.githubusercontent.com/15940127/74597511-7a067400-5015-11ea-91b1-16432e786399.png)
 
-Next, open up the connection tab that is attached to the window that is or still should be open. Change the host name to the url found under endpoint on the rds webpage. Change the maintainence database to the name of postgres. Then, insert rds database password which is the masterpassword that was created. Then, change the maintainence database to the name of you amazon postgresql database master username.
+Next, open up the connection tab that is attached to the window that is or still should be open. Change the host name to the url found under endpoint on the rds webpage. Change the maintainence database to the name of your master username used to create the postgresql database on amazon's rds website. Then, for the password portion of the connection tab insert rds database password which is the master password created on the postgresql database on amazon's rds website. 
+
 ![image](https://user-images.githubusercontent.com/15940127/74597523-b20db700-5015-11ea-8674-385052e3d74c.png)
 
 A new server should now be created with a postgres database attached.
