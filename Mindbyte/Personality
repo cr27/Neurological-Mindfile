@@ -1,3 +1,139 @@
+//Include all necessary libraries
+#include <iostream>
+#include <string>
+#include <fstream>
+
+using std::cout;
+using std::cin;
+using std::string;
+using std::ifstream;
+using std::ofstream;
+using std::ostream;
+using std::ios_base;
+
+//Declare global constants
+const int QUESTIONS_COUNT = 50;
+const int LOWEST_SCORE = 1;
+const int HIGHEST_SCORE = 5;
+const int PERSONALITY_TYPES = 5;
+const string FILE_NAME = "questions.txt";
+const string PERSONALITIES[PERSONALITY_TYPES] = { "Extroversion", "Agreeableness", "Conscientiousness", "Neuroticism",  "Openness to Experience" };
+
+//Drive the program
+int main()
+{
+	//Declare all local variables
+	ifstream read;
+	string temp;
+	int response;
+	bool flag = false;
+	int scores[PERSONALITY_TYPES] = { 20, 14, 14, 38, 8 };
+
+	//Open the file, store the questions, and close the file
+	read.open(FILE_NAME);
+	for (int i = 0; i < QUESTIONS_COUNT; i++)
+	{
+		getline(read, temp);
+		cout << temp << "\n";
+		cout << "Please enter a score from " << LOWEST_SCORE << " to " << HIGHEST_SCORE << ". " << LOWEST_SCORE;
+		cout << " if you strongly disagree and " << HIGHEST_SCORE << " if you strongly agree.\n";
+
+		flag = false;
+		do
+		{
+			cin >> response;
+			if (cin.fail())
+			{
+				cout << "Invalid input, please only enter an integer from 1 to 5, inclusive.\n";
+				cin.ignore(256, '\n');
+			}
+			else
+			{
+				if (response >= LOWEST_SCORE && response <= HIGHEST_SCORE)
+				{
+					flag = true;
+				}
+				else
+				{
+					cout << "Invalid input, please only enter an integer from 1 to 5, inclusive.\n";
+				}
+			}
+		} while (flag == false);
+
+		if (i % 10 == 0)
+		{
+			scores[i % 5] += response;
+		}
+		else if (i % 5 == 0)
+		{
+			scores[i % 5] -= response;
+		}
+		else if (i % 10 == 1 && i != 41)
+		{
+			scores[i % 5] -= response;
+		}
+		else if (i == 41)
+		{
+			scores[i % 5] += response;
+		}
+		else if (i % 5 == 1)
+		{
+			scores[i % 5] += response;
+		}
+		else if (i % 10 == 2)
+		{
+			scores[i % 10] += response;
+		}
+		else if (i % 5 == 2 && i != 47)
+		{
+			scores[i % 5] -= response;
+		}
+		else if (i == 47)
+		{
+			scores[i % 5] += response;
+		}
+		else if (i % 5 == 3 && i != 8 && i != 18)
+		{
+			scores[i % 5] -= response;
+		}
+		else if (i == 8 || i == 18)
+		{
+			scores[i % 5] += response;
+		}
+		else if (i % 5 == 4 && i != 9 && i != 19 && i != 29)
+		{
+			scores[i % 5] += response;
+		}
+		else if (i == 9 || i == 19 || i == 29)
+		{
+			scores[i % 5] -= response;
+		}
+
+	}
+	read.close();
+
+	cout << "\n";
+
+	ofstream outFile;
+	outFile.open("Personality Trait Score.txt");
+
+	for (int i = 0; i < PERSONALITY_TYPES; i++)
+	{
+		outFile << PERSONALITIES[i] << ": " << scores[i] <<"\n" << std::endl;
+		cout << PERSONALITIES[i] << ": " << scores[i] << "\n";
+	}
+
+	outFile.close();
+	//Terminate the program
+	return 0;
+}
+
+Note:
+
+Above is code that creates a single survey for the bigfivepersonalityassessment
+
+Below is the .csv file im using from a psychometric website, since I cannot utilize the bigfivepersonalityassessment as a multi-people survey at this point in time.
+
 #Personality(BigFiveTraits)
 
 "","race","age","engnat","gender","hand","source","country","E1","E2","E3","E4","E5","E6","E7","E8","E9","E10","N1","N2","N3","N4","N5","N6","N7","N8","N9","N10","A1","A2","A3","A4","A5","A6","A7","A8","A9","A10","C1","C2","C3","C4","C5","C6","C7","C8","C9","C10","O1","O2","O3","O4","O5","O6","O7","O8","O9","O10"
