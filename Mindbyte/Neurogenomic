@@ -1,4 +1,4 @@
-#Neurogenomic SNP Data
+#Neurogenomic 23&Me SNP Data
 library(readr)
 library(dplyr)
 
@@ -59,7 +59,7 @@ write.csv(outputdata_subset, "/Users/abc/Desktop/neurogenomicdata.csv")
 
 
 
-
+#Neurogenomic CSV data
 sln,rsid,chromosome,position,genotype,seqnames,start,end,width,strand,DATE.ADDED.TO.CATALOG,PUBMEDID,FIRST.AUTHOR,DATE,JOURNAL,LINK,STUDY,DISEASE.TRAIT,INITIAL.SAMPLE.SIZE,REPLICATION.SAMPLE.SIZE,REGION,CHR_ID,CHR_POS,REPORTED.GENE.S.,MAPPED_GENE,UPSTREAM_GENE_ID,DOWNSTREAM_GENE_ID,SNP_GENE_IDS,UPSTREAM_GENE_DISTANCE,DOWNSTREAM_GENE_DISTANCE,STRONGEST.SNP.RISK.ALLELE,MERGED,SNP_ID_CURRENT,CONTEXT,INTERGENIC,RISK.ALLELE.FREQUENCY,P.VALUE,PVALUE_MLOG,P.VALUE..TEXT.,OR.or.BETA,X95..CI..TEXT.,PLATFORM..SNPS.PASSING.QC.,CNV,MAPPED_TRAIT,MAPPED_TRAIT_URI,STUDY.ACCESSION,GENOTYPING.TECHNOLOGY
 1,rs3753242,1,2069681,CT,1,2138242,2138242,1,*,1/8/2011,21107309,McClay JL,11/24/2010,Neuropsychopharmacology,www.ncbi.nlm.nih.gov/pubmed/21107309,Genome-wide pharmacogenomic study of neurocognition as an indicator of antipsychotic treatment response in schizophrenia.,Response to antipsychotic treatment in schizophrenia (reasoning),"738 European ancestry, African American, and other ancestry cases",NA,1p36.33,1,2138242,PRKCZ,PRKCZ,,,ENSG00000067606,NA,NA,rs3753242-?,0,3753242,intron_variant,0,0.06,1.00E-06,6,(risperidone),NA,,Affymetrix [492900],N,reasoning,http://www.ebi.ac.uk/efo/EFO_0004350,GCST000885,Genome-wide genotyping array
 2,rs7535528,1,2444414,AG,1,2512975,2512975,1,*,1/22/2019,29500382,Nagel M,3/2/2018,Nat Commun,www.ncbi.nlm.nih.gov/pubmed/29500382,Item-level analyses reveal genetic heterogeneity in neuroticism.,Irritable mood,"366,726 European ancestry individuals",NA,1p36.32,1,2512975,PLCH2,"PANK4, PANK4",,,"ENSG00000273494, ENSG00000157881",NA,NA,rs7535528-A,0,7535528,missense_variant,0,0.362619,2.00E-08,7.698970004,,5.62,z score increase,NR [~ 10847151] (imputed),N,irritability measurement,http://www.ebi.ac.uk/efo/EFO_0009594,GCST006941,Genome-wide genotyping array

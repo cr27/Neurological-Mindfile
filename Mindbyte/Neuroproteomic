@@ -7,7 +7,7 @@ View(cerebral)
 
 write.csv(cerebral, "/Users/abc/Desktop/CCproteindata.csv", row.names=FALSE)
 
-
+#Neuroproteomic CSV data
 "Gene","Gene synonym","Ensembl","Gene description","Chromosome","Position","Protein class","Evidence","Antibody","Reliability (IH)","Reliability (Mouse Brain)","Reliability (IF)","Subcellular location","Prognostic p-value","RNA cancer category","RNA tissue category","RNA TS","RNA TS TPM","TPM max in non-specific","RNA cell line category","RNA CS","RNA CS TPM"
 "DAB1",NA,"ENSG00000173406","DAB1, reelin adaptor protein","1","56994778-58546734","Predicted intracellular proteins","Evidence at protein level","CAB032329, HPA052033, HPA067495","Enhanced",NA,"Supported","Vesicles",NA,"Mixed","Tissue enhanced",NA,"duodenum: 15.9;seminal vesicle: 13.8;small intestine: 24.8","prostate: 6.4","Cell line enhanced",NA,"fHDF/TERT166: 41.8;HeLa: 12.9;NTERA-2: 23.4;RT4: 25.5;WM-115: 26.3"
 "PAFAH1B1","LIS1, MDCR, MDS, NudF, PAFAH","ENSG00000007168","Platelet activating factor acetylhydrolase 1b regulatory subunit 1","17","2593210-2685615","Disease related genes, Plasma proteins, Predicted intracellular proteins","Evidence at protein level","CAB004489, HPA020036","Approved",NA,"Enhanced","Centrosome","Renal cancer:3.16e-4 (favourable)","Expressed in all","Expressed in all",NA,NA,"cerebral cortex: 178.7","Expressed in all",NA,NA
