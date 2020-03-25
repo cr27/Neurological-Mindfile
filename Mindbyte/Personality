@@ -1,4 +1,171 @@
-//Include all necessary libraries
+//Fisher Tempermant Inventory
+#include <iostream>
+#include <string>
+#include <fstream>
+
+
+using std::cout;
+using std::cin;
+using std::string;
+using std::ifstream;
+using std::ofstream;
+using std::ostream;
+using std::ios_base;
+
+const int QUESTIONS_COUNT = 56;
+const int LOWEST_SCORE = 1;
+const int HIGHEST_SCORE = 4;
+const int NEUROTRANSMITTER_TYPES = 4;
+const string FILE_NAME = "ftiquestions.txt";
+const string NEUROTRANSMITTER[NEUROTRANSMITTER_TYPES] = { "Dopamine,Norepinephrine", "Serotonin", "Testosterone", "Estrogen, Oxytocin"};
+int main()
+{
+	ifstream read;
+	string temp;
+	int response;
+	bool flag = false;
+	read.open(FILE_NAME);
+	int scores[NEUROTRANSMITTER_TYPES] = { 0, 0, 0, 0 };
+	for (int i = 0; i < QUESTIONS_COUNT; i++)
+	{
+		getline(read, temp);
+		cout << temp << "\n";
+		cout << "Please enter a score from " << LOWEST_SCORE << " to " << HIGHEST_SCORE << ". " << LOWEST_SCORE;
+		cout << " if you strongly disagree and " << HIGHEST_SCORE << " if you strongly agree.\n";
+
+		flag = false;
+		do
+		{
+			cin >> response;
+			if (cin.fail())
+			{
+				cout << "Invalid input, please only enter an integer from 1 to 4, inclusive.\n";
+				cin.ignore(256, '\n');
+			}
+			else
+			{
+				if (response >= LOWEST_SCORE && response <= HIGHEST_SCORE)
+				{
+					flag = true;
+				}
+				else
+				{
+					cout << "Invalid input, please only enter an integer from 1 to 4, inclusive.\n";
+				}
+			}
+		} while (flag == false);
+
+		if (i <= 0 && i < 13) {
+			scores[0] += response - 1;   //scores[] is the array we refer to so that we can access a single neurotransmitter from the array created.
+											//we start at 0 which is our first neurotrasnmitter. We then add the response (1-4) which is a numerical value that the user
+			//creates. The numerical value the user creates after answering 13 questions is then added up and set equal to the scores array which is our neurotrasnmitter.
+			// i in this case is equivalent to user input, so each time i increments, that is equivelent to each time the user inputs a numerical value to answer each question.
+		}
+		else if (i <= 14 && i < 27) {
+			scores[1] += response - 1;
+		}
+		else if (i <= 28 && i < 41) {
+			scores[2] += response - 1;
+		}
+		else if (i <= 42 && i < 55) {
+			scores[3] += response - 1;
+		}
+	
+	}
+	read.close();
+
+	cout << "\n";
+	
+	ofstream outFile;
+	outFile.open("Neurotransmitter Score.csv");
+
+	//write the headers here
+	//outFile << "Dopamin, Seretonin, Testerone,Estrogen" << \n" << std::endl
+
+
+	for (int i = 0; i < NEUROTRANSMITTER_TYPES; i++)
+	{
+		// outFile << scroes[i] << ", ";
+		
+		outFile << NEUROTRANSMITTER[i] << ": " << scores[i] << "\n" << std::endl;
+	
+		cout << NEUROTRANSMITTER[i] << ": " << scores[i] << "\n";
+		
+	}
+
+	//outFile << "\n" << std::endl;
+
+	outFile.close();
+	
+
+
+
+	//Terminate the program
+	return 0;
+	}
+	
+Fisher Tempermant Inventory Questions(.txt file being read by program):
+
+1. I have a vivid imagination. 
+2. My friends would say I am very curious. 
+3. I think it is important to be direct. 
+4. I am more creative than most people. 
+5. I would rather have loyal friends than interesting friends. 
+6. I can change my mind easily.
+7. When reading, I enjoy when the writer takes a sidetrack to say something beautiful or meaningful. 
+8. I am tough-minded. 
+9. I have more energy than most people.
+10. I consider (and reconsider) every option thoroughly before making a plan. 
+11. Long established customs need to be respected and preserved.
+12. I pursue intellectual topics thoroughly and regularly.
+13. I am very sensitive to people's feelings and needs.
+14. After watching an emotional film I often still feel moved by it several hours later.
+15. I enjoy competitive conversations.
+16. I frequently catch myself daydreaming.
+17. I think consistent routines keep life orderly and relaxing.
+18. Debating is a good way to match my wits with others.
+19. I get restless if I have to stay home for any length of time.
+20. I am able to solve problems without letting emotion get in the way
+21. I like to work in a straightforward path toward completing the task.
+22. I am willing to take risks to do what I want to do.
+23. Taking care of my possessions is a high priority for me.
+24. In general, I think it is important to follow rules.
+25. On my time off, I like to be free to do whatever looks fun.
+26. I enjoy planning way ahead.
+27. I tend to be meticulous in my duties.
+28. I am always doing new things.
+29. I am always looking for new experiences.
+30. I highly value deep emotional intimacy in my relationships.
+31. I am very empathetic.
+32. It is important to respect authority.
+33. I am intrigued by rules and patterns that govern systems.
+34. I am more optimistic than most people.
+35. I have a very wide range of interests.
+36. When I buy a new machine (e.g., camera, computer or car), I want to know all of its technical features.
+37. I understand complex machines easily.
+38. When making a decision, I like to stick to the facts rather than be swayed by people's feelings.
+39. I like to avoid the nuances and say exactly what I mean.
+40. I often find myself getting lost in my thoughts during the day.
+41. I tend to be cautious, but not fearful.
+42. Regardless of what is logical, I generally listen to my heart when making important decisions.
+43. I do things on the spur of the moment.
+44. I am more analytical and logical than most people.
+45. People should behave according to established standards of proper conduct.
+46. I have no trouble making a choice, even when several alternatives seem equally good at first.
+47. People should behave in ways that are morally correct.
+48. My friends and family would say I have traditional values.
+49. I like to figure out how things work.
+50. I find unpredictable situations exhilarating.
+51. I vividly imagine both wonderful and horrible things happening to me.
+52. When I wake up from a vivid dream, it takes me a few seconds to return to reality.
+53. I get bored when I have to do the same familiar things.
+54. I like to get to know my friends' deepest needs and feelings.
+55. I am more enthusiastic than most people.
+56. I feel emotions more deeply than most people.
+
+
+
+//Big Five Personality Assessment
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -128,11 +295,64 @@ int main()
 	return 0;
 }
 
+Big Five Questions(.txt file being read by program):
+
+1. Am the life of the party.
+2. Feel little concern for others.
+3. Am always prepared.
+4. Get stressed out easily.
+5. Have a rich vocabulary.
+6. Don't talk a lot.
+7. Am interested in people.
+8. Leave my belongings around.
+9. Am relaxed most of the time.
+10. Have difficulty understanding abstract ideas.
+11. Feel comfortable around people.
+12. Insult people.
+13. Pay attention to details.
+14. Worry about things.
+15. Have a vivid imagination.
+16. Keep in the background.
+17. Sympathize with others' feelings.
+18. Make a mess of things.
+19. Seldom feel blue.
+20. Am not interested in abstract ideas.
+21. Start conversations.
+22. Am not interested in other people's problems.
+23. Get chores done right away.
+24. Am easily disturbed.
+25. Have excellent ideas.
+26. Have little to say.
+27. Have a soft heart.
+28. Often forget to put things back in their proper place.
+29. Get upset easily.
+30. Do not have a good imagination.
+31. Talk to a lot of different people at parties.
+32. Am not really interested in others.
+33. Like order.
+34. Change my mood a lot.
+35. Am quick to understand things.
+36. Don't like to draw attention to myself.
+37. Take time out for others.
+38. Shirk my duties.
+39. Have frequent mood swings.
+40. Use difficult words.
+41. Don't mind being the center of attention.
+42. Feel others' emotions.
+43. Follow a schedule.
+44. Get irritated easily.
+45. Spend time reflecting on things.
+46. Am quiet around strangers.
+47. Make people feel at ease.
+48. Am exacting in my work.
+49. Often feel blue.
+50. Am full of ideas.
+
 Note:
 
-Above is code that creates a single survey for the bigfivepersonalityassessment
+Above is code that creates a single survey for the bigfivepersonalityassessment and Fisher Tempermant Inventory.
 
-Below is the .csv file im using from a psychometric website, since I cannot utilize the bigfivepersonalityassessment as a multi-people survey at this point in time.
+Below is the .csv file im using from a psychometric website, since I cannot utilize the psychometric questionnaires as a multi-people survey at this point in time.
 
 #Personality(BigFiveTraits)
 
