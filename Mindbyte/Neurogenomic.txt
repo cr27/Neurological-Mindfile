@@ -1,0 +1,57 @@
+library(readr)
+library(dplyr)
+
+data_dir = "/Users/abc/Desktop"
+
+genome_data_test <- read_tsv(paste0(data_dir, "/genome_Jordan_Browning_v4_Full_20190412082319.txt"),
+                             skip = 19, col_types = cols(
+    `# rsid` = col_character(),
+    chromosome = col_character(),
+    position = col_integer(),
+    genotype = col_character())
+)
+
+# Renaming the first column
+colnames(genome_data_test)[1] <- 'rsid' 
+
+
+# Filtering values
+filter(genome_data_test, rsid == "rs4481887")
+# SQL version: SELECT * FROM genome_data_test WHERE rsid = "rs4481887"
+
+filter(genome_data_test, rsid == "rs174537")
+
+
+# GWAS Catalog
+source("https://bioconductor.org/biocLite.R")
+biocLite("gwascat")
+library(gwascat)
+updated_gwas_data <- as.data.frame(makeCurrentGwascat())
+output_data <- inner_join(genome_data_test, updated_gwas_data, by = c("rsid" = "SNPS"))
+write.csv(output_data, "/Users/abc/Desktop/genomedata.csv")
+
+#import library
+#load library
+library(stringr)
+
+#converting data frame output_data into a character vector using existing data where each value is a row from output_data
+temp <- apply(output_data, 1, paste, sep="", collapse = " " )
+
+
+#creating logical vectors (vectors composed of true/false values)
+temp_brain <- str_detect(str_to_lower(temp), "brain")
+temp_neuro <- str_detect(str_to_lower(temp), "neuro")
+temp_behavior <- str_detect(str_to_lower(temp), "behav")
+
+#binding vectors side by side to create a table
+temp_all <- cbind(temp_brain, temp_neuro, temp_behavior)
+
+#detecting true values in logical vector
+selected_rows <- apply(temp_all, 1, any)
+
+#output vectors
+outputdata_subset <- output_data[selected_rows, ]
+outputdata_anyname <- output_data[!selected_rows, ]
+
+#convert to csv for upload
+write.csv(outputdata_subset, "/Users/abc/Desktop/neurogenomicdata.csv")
