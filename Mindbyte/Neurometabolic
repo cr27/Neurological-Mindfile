@@ -1,3 +1,5 @@
+Rstudio based code:
+
 #Import Brain Metabolism Data
 
 library(readr)
@@ -7,21 +9,3 @@ View(recon_store_genes_1)
 
 #Convert metabolic data to csv
 write.csv(recon_store_genes_1, "/Users/abc/Desktop/neurometabolismdata.csv")
-
-#CSV Datafile
-"","gene_number","symbol","chromosome","description","gstart","gend","tstart","tend","band","strand","gene_type","ensembl_gene","ensembl_trans","chebl_id","uniprot_gname","entrez_id","wikigene"
-"1",2571.1,"GAD1","2","glutamate decarboxylase 1 (brain, 67kDa) [Source:HGNC Symbol;Acc:HGNC:4092]",170813213,170861151,170813213,170829585,"q31.1",1,"protein_coding","ENSG00000128683","ENST00000454603",NA,"Q05329",2571,2571
-"2",2572.1,"GAD2","10","glutamate decarboxylase 2 (pancreatic islets and brain, 65kDa) [Source:HGNC Symbol;Acc:HGNC:4093]",26216307,26304558,26216307,26304558,"p12.1",1,"protein_coding","ENSG00000136750","ENST00000376261","CHEMBL2952","Q05329",2572,2572
-"3",2571.2,"GAD1","2","glutamate decarboxylase 1 (brain, 67kDa) [Source:HGNC Symbol;Acc:HGNC:4092]",170813213,170861151,170813213,170829585,"q31.1",1,"protein_coding","ENSG00000128683","ENST00000454603",NA,"Q05329",2571,2571
-"4",114.1,"ADCY8","8","adenylate cyclase 8 (brain) [Source:HGNC Symbol;Acc:HGNC:239]",130780301,131042426,130780301,131042426,"q24.22",-1,"protein_coding","ENSG00000155897","ENST00000286355","CHEMBL2097167","P40145",114,114
-"5",108.1,"ADCY2","5","adenylate cyclase 2 (brain) [Source:HGNC Symbol;Acc:HGNC:233]",7396208,7830081,7396208,7830081,"p15.31",1,"protein_coding","ENSG00000078295","ENST00000338316","CHEMBL3760","Q08462",108,108
-"6",107.1,"ADCY1","7","adenylate cyclase 1 (brain) [Source:HGNC Symbol;Acc:HGNC:232]",45574140,45723116,45574140,45664672,"p12.3",1,"protein_coding","ENSG00000164742","ENST00000432715",NA,"O88444",107,107
-"7",1152.1,"CKB","14","creatine kinase, brain [Source:HGNC Symbol;Acc:HGNC:1991]",103519659,103523111,103519659,103523111,"q32.33",-1,"protein_coding","ENSG00000166165","ENST00000348956","CHEMBL6049","P12277",1152,1152
-"8",5223.1,"PGAM1","10","phosphoglycerate mutase 1 (brain) [Source:HGNC Symbol;Acc:HGNC:8888]",97426160,97433441,97426160,97433441,"q24.1",1,"protein_coding","ENSG00000171314","ENST00000334828",NA,"P18669",5223,5223
-"9",5834.1,"PYGB","20","phosphorylase, glycogen; brain [Source:HGNC Symbol;Acc:HGNC:9723]",25248069,25298014,25248069,25298014,"p11.21",1,"protein_coding","ENSG00000100994","ENST00000216962","CHEMBL3856","P11216",5834,5834
-"10",9016.1,"SLC25A14","X","solute carrier family 25 (mitochondrial carrier, brain), member 14 [Source:HGNC Symbol;Acc:HGNC:10984]",130339888,130373361,130339913,130358736,"q26.1",1,"protein_coding","ENSG00000102078","ENST00000424447",NA,"Q9Z2B2",9016,9016
-"11",9016.2,"SLC25A14","X","solute carrier family 25 (mitochondrial carrier, brain), member 14 [Source:HGNC Symbol;Acc:HGNC:10984]",130339888,130373361,130339913,130358736,"q26.1",1,"protein_coding","ENSG00000102078","ENST00000424447",NA,"Q9Z2B2",9016,9016
-"12",5730.1,"PTGDS","9","prostaglandin D2 synthase 21kDa (brain) [Source:HGNC Symbol;Acc:HGNC:9592]",136977505,136985435,136977505,136980219,"q34.3",1,"protein_coding","ENSG00000107317","ENST00000457950",NA,"O09114",5730,5730
-"13",2173.1,"FABP7","6","fatty acid binding protein 7, brain [Source:HGNC Symbol;Acc:HGNC:3562]",122779475,122784074,NA,NA,"q22.31",1,"protein_coding","ENSG00000164434",NA,NA,"O15540",2173,2173
-"14",2947.1,"GSTM3","1","glutathione S-transferase mu 3 (brain) [Source:HGNC Symbol;Acc:HGNC:4635]",109733932,109741038,NA,NA,"p13.3",-1,"protein_coding","ENSG00000134202",NA,NA,"P21266",2947,2947
-"15",26469.1,"PTPN18","2","protein tyrosine phosphatase, non-receptor type 18 (brain-derived) [Source:HGNC Symbol;Acc:HGNC:9649]",130356007,130375409,NA,NA,"q21.1",1,"protein_coding","ENSG00000072135",NA,NA,"Q99952",26469,26469
